@@ -45,14 +45,12 @@ Query: select count(sex) from bda_project where sex = 0 and time <= 20;<br />
 6. What percentage of people who weren’t anaemic, or diabetic and did not smoke, died?<br />
 Query: select count(sex) from bda_project;<br />
 ![image](https://user-images.githubusercontent.com/57013059/233917595-e80773ce-80fb-43c0-acf4-96b868f29ee2.png)<br />
-
 select (count(sex)/299)*100 from bda_project where (anaemia=0 OR diabetes=0) AND smoking=0 AND DEATH_EVENT=1;<br />
 ![image](https://user-images.githubusercontent.com/57013059/233917633-4f2be0a0-1973-4636-9ec3-9aef5cfebca2.png)<br />
 
 7. What percentage of people who have a high blood pressure did not die?<br />
 Query: select count(sex) from bda_project;<br />
 ![image](https://user-images.githubusercontent.com/57013059/233917678-0016dd3b-265c-4680-8557-5f5613519bc5.png)<br />
-
 select (count(sex)/299)*100 from bda_project where high_blood_pressure=1 AND DEATH_EVENT=0;<br />
 ![image](https://user-images.githubusercontent.com/57013059/233917711-debee330-b86e-4f70-8231-8779ac5a4ae2.png)<br />
 
@@ -63,4 +61,3 @@ Query: select count(sex) from bda_project where platelets < 150000;<br />
 9. How many men and women have high blood pressure?<br />
 Query: select count(sex) from bda_project where high_blood_pressure=1;<br />
 ![image](https://user-images.githubusercontent.com/57013059/233917821-90a0ea7f-ffa6-4819-83fe-397497c0f36f.png)<br />
-
