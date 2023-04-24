@@ -27,7 +27,6 @@ Query: select count(anaemia)+count(diabetes) from bda_project where Age>60;<br /
 Query: select count(sex) from bda_project where sex=1;<br />
 ![image](https://user-images.githubusercontent.com/57013059/233917208-965a43ae-d597-445b-b666-a66073cb6c24.png)<br />
 ![image](https://user-images.githubusercontent.com/57013059/233917241-18697f77-f9dd-4713-8b6a-48defd5c8f30.png)<br />
-
 select (count(sex)/194)*100 from bda_project where smoking=0 AND sex=1;<br />
 ![image](https://user-images.githubusercontent.com/57013059/233917298-d644712a-9324-4b2f-a6c8-0a5f520235cd.png)<br />
 
